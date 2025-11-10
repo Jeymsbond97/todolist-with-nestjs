@@ -1,0 +1,26 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "frontend": "npm --prefix frontend start",
+    "backend": "npm --prefix backend start",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+  },
+  "dependencies": {
+    "@nestjs/config": "github:nestjs/config",
+    "@nestjs/typeorm": "^11.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "concurrently": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "mysql2": "^3.15.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.27"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
