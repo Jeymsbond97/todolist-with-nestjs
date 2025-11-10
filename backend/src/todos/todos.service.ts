@@ -35,7 +35,7 @@ export class TodosService {
   }
 
   async remove(id: number): Promise<void> {
-    await this.findOne(id); // will throw if not found
+    await this.findOne(id);
     await this.todosRepository.delete(id);
   }
 }
